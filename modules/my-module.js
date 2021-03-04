@@ -1,0 +1,1 @@
+exports.randomText = "Hello Charlie"

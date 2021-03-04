@@ -1,0 +1,30 @@
+// var access = require('/Users/ashishybeary/Documents/nodejs/heavyops(disk/network)/data.json')
+// console.log("Way 1:")
+// console.log(access.kelsa)
+// console.log('')
+// console.log('')
+// console.log("way 2:")
+// var access2 = require('fs')
+// access2.readFile('/Users/ashishybeary/Documents/nodejs/heavyops(disk/network)/data.json', 'utf-8', (err, data) => {
+//     x = JSON.parse(data)
+//     console.log(x.name)
+//     console.log(x.kelsa)
+// })
+
+
+var access = require('fs')
+access.readFile('/Users/ashishybeary/Documents/nodejs/heavyops(disk/network)/data.json', 'utf-8', (err,data) => {
+    var parser = JSON.parse(data)
+    console.log("Way 2:")
+    console.log(data)
+    console.log(parser.name)
+    console.log(parser.kelsa)
+})
+
+var access = require('/Users/ashishybeary/Documents/nodejs/heavyops(disk/network)/data.json')
+console.log("Way 1:")
+console.log(access)
+console.log(access.name)
+console.log(access.kelsa)
+console.log('')
+console.log('')
